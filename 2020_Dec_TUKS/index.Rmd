@@ -33,7 +33,7 @@ class: center, middle
 
 Presentation created using **{xaringan}** (the **robot** theme)
 
-Slides available at [mkearney.github.io/dsa_execweek_talk/](https://mkearney.github.io/dsa_execweek_talk/)
+Slides available at [https://tanyas08.github.io/Talks/2020_Dec_TUKS/index.html#1](https://tanyas08.github.io/Talks/2020_Dec_TUKS/index.html#1)
 
 ---
 
