@@ -29,14 +29,6 @@ options(htmltools.dir.version = FALSE)
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
 
-class: center, middle
-
-Presentation created using **{xaringan}** (the **robot** theme)
-
-Slides available at [https://tanyas08.github.io/Talks/2020_Dec_TUKS/index.html](https://tanyas08.github.io/Talks/2020_Dec_TUKS/index.html)
-
----
-
 # The Backstory
 
 .center[species interaction networks 🕸 + fancy maths 🧮 | FAIR & Open Science ⚖️ | part-time doodler 🎨 | warm beverage fan ☕]
@@ -181,9 +173,9 @@ But in order for this to happen your data needs to be **usable**
   
   
 - Archive data in an accessible way
-  * Make as open and findable as possible<sup>*</sup> e.g. a data statement and link to archive/repository
-  * Use non-propriety file formats e.g. .csv/.txt
+  * Make as open and findable as possible<sup>*</sup>
   * Include **all** documentation
+  * See [here](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005097) for some more tips
   
   
 - Do some of your [own research](https://www.fosteropenscience.eu/courses)
@@ -316,7 +308,28 @@ background-size: 100%
 
 + Social media
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="sketch.js"></script>
+    <script src="dazzleSketch.js"></script>
+---
 
+Thank You
+<html lang="en">
+<body>
+    <h1>This is a Header</h1>
+    <p>This is a paragraph that we will scribble on. wljefhbrjhsfg cwlkehflkshflkjsghef,shfeksb lkefhbsv;kfhns;khf liuwhfvbksehbhfkjsbfcjsbdflhbcskfhbseklhfbvksjb fcjksbdf kjsehrksbhcfkasbkvsdnfbkvsdhfbk.snfbv,msdnfvks.dhfksbf,nmsndfksvdhbfkjsbhc,sdnfbdjkshfl`sbfc.,dnv .k`fhbhf;oi`ajnefi`jnevo;irewbhvrjqn;lcjas;hbw;oefjn;ljefbvlewhfo</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="sketch.js"></script>
+    <script src="dazzleSketch.js"></script>
+</body>
+</html>
 
+---
+
+class: center, middle
+
+Presentation created using **{xaringan}** (the **robot** theme)
+
+Slides available at [https://tanyas08.github.io/Talks/2020_Dec_TUKS/](https://tanyas08.github.io/Talks/2020_Dec_TUKS/index.html)
 
 
