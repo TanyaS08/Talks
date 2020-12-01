@@ -94,13 +94,13 @@ student training
 
 --
 .center[
-<img src="img/TheWay.jpeg" width="58%" />
+<img src="img/DataLifecycle.png" width="78%" />
 ]
 
 --
 
 .center[
-But in order for this to happen your data needs to be **usable**
+But in order for this to happen your data need to be **usable**
 ]
 
 ---
@@ -117,6 +117,12 @@ But in order for this to happen your data needs to be **usable**
 
 * Data are only as good as their documentation
 
+]
+
+--
+
+.pull-right[
+<img src="img/FairGremlins.png" width="70%" />
 ]
 
 ---
@@ -158,7 +164,9 @@ But in order for this to happen your data needs to be **usable**
 # Where to Start Though?
 
 
-.left-column[data lifecycle.png]
+.left-column[
+<img src="img/DataLifecycle_vert.png" width="100%" />
+]
 
 --
 
@@ -186,16 +194,16 @@ But in order for this to happen your data needs to be **usable**
 ---
 class: inverse, middle, center
 
-background-image: url(https://d33wubrfki0l68.cloudfront.net/62bcc8535a06077094ca3c29c383e37ad7334311/a263f/assets/img/logo.svg)
+background-image: url(img/document.png)
 background-position: bottom
-background-size: 20%
+background-size: 45%
 
 # 1. Documenting, Documenting and Documenting
 
 ---
-background-image: url(https://d33wubrfki0l68.cloudfront.net/62bcc8535a06077094ca3c29c383e37ad7334311/a263f/assets/img/logo.svg)
+background-image: url(img/reproducible.png)
 background-position: bottom right
-background-size: 20%
+background-size: 40%
 
 # If it isn't Documented it Doesn't Exist
 
@@ -206,14 +214,15 @@ background-size: 20%
 
 .footnote[[*] Ideally using a non propriety format such as .csv or .txt]
 
+.pull-right[<img src="img/interoperable.png" width="70%" />]
 --
 
+.pull-left[
 **Document the *entire* workflow**
 + Having metadata for variables - that's good
   + Mandatory I'd argue
 + Documenting how scripts 'work' - even better
-  + What happens in each script
-  + What order to work with them
+]
 
 ---
 
@@ -223,13 +232,16 @@ background-size: 80%
 ---
 class: inverse, middle, center
 
-background-image: url(https://d33wubrfki0l68.cloudfront.net/62bcc8535a06077094ca3c29c383e37ad7334311/a263f/assets/img/logo.svg)
+background-image: url(img/annotate.png)
 background-position: bottom
-background-size: 20%
+background-size: 68%
 
 # 2. Annotating code
 
 ---
+background-image: url(img/accessible.png)
+background-position: bottom left
+background-size: 40%
 
 # Annotations save lives <sub style="font-size: medium;">(and time)</sub>
 
@@ -251,6 +263,7 @@ Annotating your code by adding comments makes it easier for you (and others) to 
 
 .pull-right[
 <img src="img/annotations.png" width="100%" />]
+
 
 ---
 class: inverse, middle, center
