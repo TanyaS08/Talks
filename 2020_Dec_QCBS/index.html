@@ -13,19 +13,14 @@
 class: center, middle, inverse, title-slide
 
 # Exploring the complexity of ecological networks using SVD entropy
-### <p><u>Tanya Strydom</u>, <br> Gullio V. Dalla Riva &amp; Timothée Poisot</p>
-### <table style="border-style:none; padding: 0 0 50px 0; background-color:transparent" class="table">
-<tr>
-<th style="padding:0 30px">
-<a href="https://twitter.com/tanyas_08"><i class="fa fa-twitter"></i></a>
-</th>
-</tr>
-<tr style="background-color:transparent">
-<th style="padding:0 30px">
-<a href="https://twitter.com/tanyas_08"> <span class="citation">@TanyaS_08</span> </a>
-</th>
-</tr>
-</table>
+### <p style="font-size:23pt;">
+<u>Tanya Strydom</u><sup>1,2</sup><br> Gullio V. Dalla Riva<sup>3</sup> &amp; Timothée Poisot<sup>1,2</sup>
+</p>
+<br>
+<body style="font-size:8pt;">
+<small><sup>1</sup>Département de Sciences Biologiques, Université de Montréal; <sup>2</sup>Québec Centre for Biodiversity Sciences; <sup>3</sup>School of Mathematics and Statistics, University of Canterbury</small>
+</body>
+### <p><a href="https://twitter.com/tanyas_08"><i class="fa fa-twitter"></i></a><a href="https://twitter.com/tanyas_08"> <span class="citation">@TanyaS_08</span> </a></p>
 
 ---
 
@@ -33,78 +28,203 @@ class: center, middle, inverse, title-slide
 
 
 
-# The Traditional Definition of Complexity
 
-
----
-
-# Taking a Physical Approach to Complexity
-
-`\(\mathbf{A} = \mathbf{U}\cdot\mathbf{\Sigma}\cdot\mathbf{V}^T\)`
-
-`\(m \times m\)` orthogonal matrix and
-`\(\mathbf{V}\)` an `\(n \times n\)` orthogonal matrix. The columns in these matrices
-are, respectively, the left- and right-singular vectors of `\(\mathbf{A}\)`.
-`\(\mathbf{\Sigma}\)` is a diagonal matrix, where `\(\sigma_{i} = \Sigma_{ii}\)`, which contains the singular values of `\(\mathbf{A}\)`. When the values of
-`\(\mathbf{\sigma}\)` are arranged in descending order, the singular values are
-unique, though the singular vectors may not be
-
----
-
-# Estimating Complexity
+# The complexity of communities
 
 .pull-left[
-**Using Rank Deficiency**
-
-wkqfjqef.
-
-$$
-D = 1-\frac{r}{M}
-$$
+Network theory provides a powerful approach to understanding the complexity of ecological networks
 ]
 
-.pull-right[
-**Using SVD Entropy**
+
+&lt;span 
+  style="
+  margin-left:-10%; 
+  position: absolute; 
+  top: 17%"&gt;
+  &lt;img src="img/community.png" width="80%" /&gt;
+&lt;/span&gt;
+
+???
+
+
+--
+
+&lt;span style="margin: 0;
+  position: absolute;
+  bottom: 10%;
+  text-align: left;
+  left: 6%;"&gt; We can use network structure &lt;br&gt;
+  to infer ecological properties &lt;br&gt;
+  and processes
+&lt;/span&gt;
+  
+&lt;span 
+  style="
+  margin-left:-10%; 
+  position: absolute; 
+  top: 17%"&gt;
+  &lt;img src="img/Network.png" width="80%" /&gt;
+&lt;/span&gt;
+
+&lt;span style="margin: 0;
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  right: 5%;"&gt; Complexity = stability
+&lt;/span&gt;
+  
+???
+This notion doesn't really hold though...
+
+---
+
+# A traditional definition of complexity
+
+Assume that a system is complex because it has many parts *i.e.* measuring structural complexity
+
+&lt;span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 35%"&gt;
+  &lt;img src="img/structure.png" width="95%" /&gt;
+&lt;/span&gt;
+
+---
+
+# Taking a physical approach to complexity
+
+Instead we can measure the 'physical complexity' *i.e.* the amount of information required to encode the system
+
+&lt;span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 42%"&gt;
+  &lt;img src="img/Haring.jpg" height="350 px" /&gt;
+&lt;/span&gt;
+
+&lt;span 
+  style="
+  margin-left:50%; 
+  position: absolute; 
+  top: 42%"&gt;
+  &lt;img src="img/Basquait.png" height="350 px" /&gt;
+&lt;/span&gt;
+---
+
+# Estimating complexity using SVD
+
+`$$\mathbf{A} = \mathbf{U}\cdot\mathbf{\Sigma}\cdot\mathbf{V}^T$$`
+
+&lt;span 
+  style="
+  margin-left:00%; 
+  position: absolute; 
+  top: 42%"&gt;
+  &lt;img src="img/SVD.png" width="95%" /&gt;
+&lt;/span&gt;
+
+---
+
+# SVD Entropy as internal complexity
+
+Using the `\(\sigma\)` values from `\(\mathbf{\Sigma}\)` and following Pielou's evenness  (Pielou 1975) we can ensure that `\(\sigma\)` values are less than unity:
+
+$$
+s_i = \sigma_i/\text{sum}(\sigma)
+$$
+
+--
+
+and estimate entropy following Shannon (1948) as:
+
 
 $$
 J = -\frac{1}{\ln(k)}\sum_{i=1}^k s_i\cdot\ln(s_i)
 $$
-]
+
+--
+
+High values of SVD entropy reflects that all vectors are equally important, *i.e.* we cannot efficiently compress the network, indicating high complexity 
+
+???
+
+where k is the max rank
+
+---
+
+# SVD Entropy as internal complexity
+
+&lt;span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 30%"&gt;
+  &lt;img src="img/SVD_vis.png" width="90%" /&gt;
+&lt;/span&gt;
+
+---
+# SVD Entropy of Networks
+
+Ecological networks are extremely complex
+
+&lt;span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 20%"&gt;
+  &lt;img src="img/interactiontype_v_entropy.png" width="93%" /&gt;
+&lt;/span&gt;
 
 ---
 # Network Structure Captures Network Complexity 
 
-.footnote[But then things begin to tell a different story...]
+
+&lt;span 
+  style="
+  margin-left:15%; 
+  position: absolute; 
+  top: 25%"&gt;
+  &lt;img src="img/others_v_entropy.png" width="95%" /&gt;
+&lt;/span&gt;
+
+--
+
+ .footnote[But then things begin to tell a different story...]
 ---
-# Complexity does not mean Robustness
+# Complex does not mean robust
+
+--
+
+&lt;span 
+  style="
+  margin-left:10%; 
+  position: absolute; 
+  top: 30%"&gt;
+  &lt;img src="img/entropy_v_AUCall.png" width="75%" /&gt;
+&lt;/span&gt;
+
+???
+
+[structural measure of complexity are related to robustness (simulating extinctions)... BUT we don't see this with SVD Entropy]
 
 
 ---
 
-# Structure Constrains Complexity
+# What next?
 
-Annotating your code by adding comments makes it easier for you (and others) to understand what or why you decided to do what you did
++ Complexity is a slippery term to define
 
----
++ Different measures of complexity capture different ecological processes
 
-# Although Complex, Networks Could Be Better
+  * *e.g.* simulating robustness to extinctions
+  
++ SVD Entropy may provide a starting point to unifying the definition of complexity
 
-$$
-z_i = \frac{x_i-\mu_i}{\sigma_i}
-$$
-
----
-
-# So What
-
-
----
-
-class: center, middle
-
-Presentation created using **{xaringan}**
-
-Slides available at [https://tanyas08.github.io/Talks/2020_Dec_QCBS/](https://tanyas08.github.io/Talks/2020_Dec_QCBS/index.html#1)
+.footnote[
+For a more complete breakdown the preprint can be found at [doi.org/fmpt](https://doi.org/fmpt)
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

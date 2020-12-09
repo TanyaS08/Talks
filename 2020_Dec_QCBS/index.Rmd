@@ -2,15 +2,12 @@
 title: "Exploring the complexity of ecological networks using SVD entropy"
 subtitle: | 
 author: |
-  <u>Tanya Strydom</u>, <br> 
-  Gullio V. Dalla Riva & 
-  Timothée Poisot
+  <p style="font-size:23pt;"><u>Tanya Strydom</u><sup>1,2</sup><br> 
+  Gullio V. Dalla Riva<sup>3</sup> & 
+  Timothée Poisot<sup>1,2</sup></p><br> 
+  <body style="font-size:8pt;"><small><sup>1</sup>Département de Sciences Biologiques, Université de Montréal; <sup>2</sup>Québec Centre for Biodiversity Sciences; <sup>3</sup>School of Mathematics and Statistics, University of Canterbury</small></body>
 date: |
-  <table style="border-style:none; padding: 0 0 50px 0; background-color:transparent" class="table"><tr>
-  <th style="padding:0 30px"><a href="https://twitter.com/tanyas_08"><i class="fa fa-twitter"></i></a></th>
-  </tr><tr style="background-color:transparent">
-  <th style="padding:0 30px"><a href="https://twitter.com/tanyas_08"> @TanyaS_08 </a></th>
-  </tr></table>
+  <a href="https://twitter.com/tanyas_08"><i class="fa fa-twitter"></i></a><a href="https://twitter.com/tanyas_08"> @TanyaS_08 </a>
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -34,75 +31,200 @@ style_duo_accent(
   secondary_color = "#FF961C"
 )
 ```
-# The Traditional Definition of Complexity
 
-
----
-
-# Taking a Physical Approach to Complexity
-
-$\mathbf{A} = \mathbf{U}\cdot\mathbf{\Sigma}\cdot\mathbf{V}^T$
-
-$m \times m$ orthogonal matrix and
-$\mathbf{V}$ an $n \times n$ orthogonal matrix. The columns in these matrices
-are, respectively, the left- and right-singular vectors of $\mathbf{A}$.
-$\mathbf{\Sigma}$ is a diagonal matrix, where $\sigma_{i} = \Sigma_{ii}$, which contains the singular values of $\mathbf{A}$. When the values of
-$\mathbf{\sigma}$ are arranged in descending order, the singular values are
-unique, though the singular vectors may not be
-
----
-
-# Estimating Complexity
+# The complexity of communities
 
 .pull-left[
-**Using Rank Deficiency**
-
-wkqfjqef.
-
-$$
-D = 1-\frac{r}{M}
-$$
+Network theory provides a powerful approach to understanding the complexity of ecological networks
 ]
 
-.pull-right[
-**Using SVD Entropy**
+
+<span 
+  style="
+  margin-left:-10%; 
+  position: absolute; 
+  top: 17%">
+  <img src="img/community.png" width="80%" />
+</span>
+
+???
+
+
+--
+
+<span style="margin: 0;
+  position: absolute;
+  bottom: 10%;
+  text-align: left;
+  left: 6%;"> We can use network structure <br>
+  to infer ecological properties <br>
+  and processes
+</span>
+  
+<span 
+  style="
+  margin-left:-10%; 
+  position: absolute; 
+  top: 17%">
+  <img src="img/Network.png" width="80%" />
+</span>
+
+<span style="margin: 0;
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  right: 5%;"> Complexity = stability
+</span>
+  
+???
+This notion doesn't really hold though...
+
+---
+
+# A traditional definition of complexity
+
+Assume that a system is complex because it has many parts *i.e.* measuring structural complexity
+
+<span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 35%">
+  <img src="img/structure.png" width="95%" />
+</span>
+
+---
+
+# Taking a physical approach to complexity
+
+Instead we can measure the 'physical complexity' *i.e.* the amount of information required to encode the system
+
+<span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 42%">
+  <img src="img/Haring.jpg" height="350 px" />
+</span>
+
+<span 
+  style="
+  margin-left:50%; 
+  position: absolute; 
+  top: 42%">
+  <img src="img/Basquait.png" height="350 px" />
+</span>
+---
+
+# Estimating complexity using SVD
+
+$$\mathbf{A} = \mathbf{U}\cdot\mathbf{\Sigma}\cdot\mathbf{V}^T$$
+
+<span 
+  style="
+  margin-left:00%; 
+  position: absolute; 
+  top: 42%">
+  <img src="img/SVD.png" width="95%" />
+</span>
+
+---
+
+# SVD Entropy as internal complexity
+
+Using the $\sigma$ values from $\mathbf{\Sigma}$ and following Pielou's evenness  (Pielou 1975) we can ensure that $\sigma$ values are less than unity:
+
+$$
+s_i = \sigma_i/\text{sum}(\sigma)
+$$
+
+--
+
+and estimate entropy following Shannon (1948) as:
+
 
 $$
 J = -\frac{1}{\ln(k)}\sum_{i=1}^k s_i\cdot\ln(s_i)
 $$
-]
+
+--
+
+High values of SVD entropy reflects that all vectors are equally important, *i.e.* we cannot efficiently compress the network, indicating high complexity 
+
+???
+
+where k is the max rank
+
+---
+
+# SVD Entropy as internal complexity
+
+<span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 30%">
+  <img src="img/SVD_vis.png" width="90%" />
+</span>
+
+---
+# SVD Entropy of Networks
+
+Ecological networks are extremely complex
+
+<span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 20%">
+  <img src="img/interactiontype_v_entropy.png" width="93%" />
+</span>
 
 ---
 # Network Structure Captures Network Complexity 
 
-.footnote[But then things begin to tell a different story...]
+
+<span 
+  style="
+  margin-left:15%; 
+  position: absolute; 
+  top: 25%">
+  <img src="img/others_v_entropy.png" width="95%" />
+</span>
+
+--
+
+ .footnote[But then things begin to tell a different story...]
 ---
-# Complexity does not mean Robustness
+# Complex does not mean robust
+
+--
+
+<span 
+  style="
+  margin-left:10%; 
+  position: absolute; 
+  top: 30%">
+  <img src="img/entropy_v_AUCall.png" width="75%" />
+</span>
+
+???
+
+[structural measure of complexity are related to robustness (simulating extinctions)... BUT we don't see this with SVD Entropy]
 
 
 ---
 
-# Structure Constrains Complexity
+# What next?
 
-Annotating your code by adding comments makes it easier for you (and others) to understand what or why you decided to do what you did
++ Complexity is a slippery term to define
 
----
++ Different measures of complexity capture different ecological processes
 
-# Although Complex, Networks Could Be Better
+  * *e.g.* simulating robustness to extinctions
+  
++ SVD Entropy may provide a starting point to unifying the definition of complexity
 
-$$
-z_i = \frac{x_i-\mu_i}{\sigma_i}
-$$
-
----
-
-# So What
-
-
----
-
-class: center, middle
-
-Presentation created using **{xaringan}**
-
-Slides available at [https://tanyas08.github.io/Talks/2020_Dec_QCBS/](https://tanyas08.github.io/Talks/2020_Dec_QCBS/index.html#1)
+.footnote[
+For a more complete breakdown the preprint can be found at [doi.org/fmpt](https://doi.org/fmpt)
+]
