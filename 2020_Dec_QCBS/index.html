@@ -32,16 +32,16 @@ class: center, middle, inverse, title-slide
 # The complexity of communities
 
 .pull-left[
-Network theory provides a powerful approach to understanding the complexity of ecological networks
+Quantifying the complexity and stability of communities remains a challenge.
 ]
 
 
 &lt;span 
   style="
-  margin-left:-10%; 
+  margin-left:-5%; 
   position: absolute; 
-  top: 17%"&gt;
-  &lt;img src="img/community.png" width="80%" /&gt;
+  top: 5%"&gt;
+  &lt;img src="img/community.png" width="100%" /&gt;
 &lt;/span&gt;
 
 ???
@@ -51,36 +51,45 @@ Network theory provides a powerful approach to understanding the complexity of e
 
 &lt;span style="margin: 0;
   position: absolute;
-  bottom: 10%;
+  bottom: 30%;
   text-align: left;
-  left: 6%;"&gt; We can use network structure &lt;br&gt;
+  left: 7%;"&gt; Network theory provides a &lt;br&gt;
+  powerful approach &lt;br&gt;
+  and allows us &lt;br&gt;
   to infer ecological properties &lt;br&gt;
   and processes
 &lt;/span&gt;
   
 &lt;span 
   style="
-  margin-left:-10%; 
+  margin-left:-5%; 
   position: absolute; 
-  top: 17%"&gt;
-  &lt;img src="img/Network.png" width="80%" /&gt;
+  top: 5%"&gt;
+  &lt;img src="img/Network.png" width="100%" /&gt;
 &lt;/span&gt;
 
-&lt;span style="margin: 0;
-  position: absolute;
-  top: 20%;
-  text-align: center;
-  right: 5%;"&gt; Complexity = stability
-&lt;/span&gt;
-  
 ???
-This notion doesn't really hold though...
+Complexity and stability are issues that have been studied but has remained a challenge to quantify. The debate is still prevalent in ecology
 
 ---
 
 # A traditional definition of complexity
 
 Assume that a system is complex because it has many parts *i.e.* measuring structural complexity
+
+--
+
+.pull-left[
+**Nestedness**
+
+Do species assemblages form subsets of larger assemblages?
+]
+
+.pull-right[
+**Connectance**
+
+What proportion of potential interaction are realised?
+]
 
 &lt;span 
   style="
@@ -90,11 +99,15 @@ Assume that a system is complex because it has many parts *i.e.* measuring struc
   &lt;img src="img/structure.png" width="95%" /&gt;
 &lt;/span&gt;
 
+???
+Nestedness would look at specialists vs generalists
 ---
 
 # Taking a physical approach to complexity
 
 Instead we can measure the 'physical complexity' *i.e.* the amount of information required to encode the system
+
+--
 
 &lt;span 
   style="
@@ -119,17 +132,17 @@ Instead we can measure the 'physical complexity' *i.e.* the amount of informatio
 
 &lt;span 
   style="
-  margin-left:00%; 
+  margin-left:-4%; 
   position: absolute; 
-  top: 42%"&gt;
-  &lt;img src="img/SVD.png" width="95%" /&gt;
+  top: 35%"&gt;
+  &lt;img src="img/SVD.png" width="97%" /&gt;
 &lt;/span&gt;
 
 ---
 
 # SVD Entropy as internal complexity
 
-Using the `\(\sigma\)` values from `\(\mathbf{\Sigma}\)` and following Pielou's evenness  (Pielou 1975) we can ensure that `\(\sigma\)` values are less than unity:
+Using the `\(\sigma\)` values from `\(\mathbf{\Sigma}\)` and following Pielou's evenness  (Pielou 1975) we can ensure that `\(\sigma\)` values are less than one:
 
 $$
 s_i = \sigma_i/\text{sum}(\sigma)
@@ -167,7 +180,7 @@ where k is the max rank
 ---
 # SVD Entropy of Networks
 
-Ecological networks are extremely complex
+Ecological networks are *extremely* complex
 
 &lt;span 
   style="
@@ -206,8 +219,8 @@ Ecological networks are extremely complex
 &lt;/span&gt;
 
 ???
-
-[structural measure of complexity are related to robustness (simulating extinctions)... BUT we don't see this with SVD Entropy]
+First do the axes and then have the point appear
+How do we define resilience in ecological terms -&gt; focus on how we defined resilience
 
 
 ---
@@ -225,6 +238,9 @@ Ecological networks are extremely complex
 .footnote[
 For a more complete breakdown the preprint can be found at [doi.org/fmpt](https://doi.org/fmpt)
 ]
+
+???
+Visually draw it back so bring the images - we can use different measures of complexity and they can tell a different story, building lego blocks
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
