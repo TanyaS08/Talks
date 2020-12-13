@@ -96,10 +96,10 @@ What proportion of potential interaction are realised?
 
 <span 
   style="
-  margin-left:0%; 
+  margin-left:-3%; 
   position: absolute; 
-  top: 35%">
-  <img src="img/structure.png" width="95%" />
+  top: 50%">
+  <img src="img/structure.png" width="90%" />
 </span>
 
 ???
@@ -131,7 +131,6 @@ Instead we can measure the 'physical complexity' *i.e.* the amount of informatio
 
 # Estimating complexity using SVD
 
-$$\mathbf{A} = \mathbf{U}\cdot\mathbf{\Sigma}\cdot\mathbf{V}^T$$
 
 <span 
   style="
@@ -143,7 +142,9 @@ $$\mathbf{A} = \mathbf{U}\cdot\mathbf{\Sigma}\cdot\mathbf{V}^T$$
 
 ---
 
-# SVD Entropy as internal complexity
+# SVD Entropy as complexity
+
+
 
 Using the $\sigma$ values from $\mathbf{\Sigma}$ and following Pielou's evenness  (Pielou 1975) we can ensure that $\sigma$ values are less than one:
 
@@ -170,13 +171,13 @@ where k is the max rank
 
 ---
 
-# SVD Entropy as internal complexity
+# SVD Entropy as complexity
 
 <span 
   style="
   margin-left:0%; 
   position: absolute; 
-  top: 30%">
+  top: 25%">
   <img src="img/SVD_vis.png" width="90%" />
 </span>
 
@@ -190,7 +191,7 @@ Ecological networks are *extremely* complex
   margin-left:0%; 
   position: absolute; 
   top: 20%">
-  <img src="img/interactiontype_v_entropy.png" width="93%" />
+  <img src="img/interactiontype_v_entropy2.png" width="93%" />
 </span>
 
 ---
@@ -199,26 +200,36 @@ Ecological networks are *extremely* complex
 
 <span 
   style="
-  margin-left:15%; 
+  margin-left:-5%; 
   position: absolute; 
-  top: 25%">
-  <img src="img/others_v_entropy.png" width="95%" />
+  top: 30%">
+  <img src="img/others_v_entropy2.png" width="88%" />
 </span>
 
---
+???
+Interstingly although we see this strong relationship its also interesting to note that while the networks span the almost the 'complete' range of possible values for connectance and nesetedness - something we don't see for entropy
 
- .footnote[But then things begin to tell a different story...]
+Arguably these measures are telling a similar story but what happens when we take a bit more of an ecological approach e.g. resilliance
+
 ---
-# Complex does not mean robust
+# Defining Complexity Matters
+
+<span 
+  style="
+  margin-left:-5%; 
+  position: absolute; 
+  top: 23%">
+  <img src="img/axes.png" width="95%" />
+</span>
 
 --
 
 <span 
   style="
-  margin-left:10%; 
+  margin-left:-5%; 
   position: absolute; 
-  top: 30%">
-  <img src="img/entropy_v_AUCall.png" width="75%" />
+  top: 23%">
+  <img src="img/entropy_v_AUCall2.png" width="95%" />
 </span>
 
 ???
@@ -228,19 +239,63 @@ How do we define resilience in ecological terms -> focus on how we defined resil
 
 ---
 
-# What next?
+# Connecting the Dots
 
-+ Complexity is a slippery term to define
+.pull-left[
 
-+ Different measures of complexity capture different ecological processes
+1. Ecological networks are extremely complex
 
-  * *e.g.* simulating robustness to extinctions
-  
-+ SVD Entropy may provide a starting point to unifying the definition of complexity
+2. Different measures of complexity capture different ecological processes
+
+3. We need to unify how we define complexity
+]
 
 .footnote[
 For a more complete breakdown the preprint can be found at [doi.org/fmpt](https://doi.org/fmpt)
 ]
 
+<span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 23%">
+  <img src="img/con1.png" width="85%" />
+</span>
+
+--
+
+<span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 23%">
+  <img src="img/con2.png" width="90%" />
+</span>
+
+--
+
+<span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 23%">
+  <img src="img/con3.png" width="80%" />
+</span>
+
+--
+
+<span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 23%">
+  <img src="img/con4.png" width="90%" />
+</span>
+
+
 ???
-Visually draw it back so bring the images - we can use different measures of complexity and they can tell a different story, building lego blocks
+1. ecological networks are very complex
+
+Our different measures of complexity don't always tell the same story e.g. resilience and suggests that they are probably underpinning different ecological properties
+
+Thus we need a standardised mechanism -> here we argue in favoure of SVD entropy

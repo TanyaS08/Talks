@@ -261,7 +261,7 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 }
 
 .remark-slide .title-slide {
-  background-image: url(img/UdeM_logo.png), url(img/QCBS_logo_mintext.png);
-  background-position: 1% 99%, 99% 99%;
-  background-size: auto 120px, auto 120px;
+  background-image: url(img/UdeM_logo.png), url(img/poisotlab.png), url(img/QCBS_logo_mintext.png);
+  background-position: 1% 99%, 50% 97%, 99% 99%;
+  background-size: auto 85px, auto 74px, auto 85px;
 }
