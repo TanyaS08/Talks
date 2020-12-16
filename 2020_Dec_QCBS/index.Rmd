@@ -7,7 +7,6 @@ author: |
   Timothée Poisot<sup>1,2</sup></p><br> 
   <body style="font-size:8pt;"><small><sup>1</sup>Département de Sciences Biologiques, Université de Montréal; <sup>2</sup>Québec Centre for Biodiversity Sciences; <sup>3</sup>School of Mathematics and Statistics, University of Canterbury</small></body>
 date: |
-  <a href="https://twitter.com/tanyas_08"><i class="fa fa-twitter"></i></a><a href="https://twitter.com/tanyas_08"> @TanyaS_08 </a>
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -236,66 +235,95 @@ Arguably these measures are telling a similar story but what happens when we tak
 First do the axes and then have the point appear
 How do we define resilience in ecological terms -> focus on how we defined resilience
 
-
 ---
 
 # Connecting the Dots
 
-.pull-left[
+<span 
+  style="
+  margin-left: -15%; 
+  position: absolute; 
+  top: 9%">
+  <img src="img/community.png" width="65%" />
+</span>
 
-1. Ecological networks are extremely complex
+--
 
-2. Different measures of complexity capture different ecological processes
+<span style="margin: 0;
+  position: absolute;
+  bottom: 65%;
+  text-align: left;
+  left: 34%;"> 1. Not all measures of<br>
+  complexity are created<br>
+  equal 
+</span>
 
-3. We need to unify how we define complexity
-]
+<span 
+  style="
+  margin-left:30%; 
+  position: absolute; 
+  top: 37%">
+  <img src="img/entropy_v_AUCall2.png" width="25%" />
+</span>
+
+--
+
+<span style="margin: 0;
+  position: absolute;
+  bottom: 37%;
+  text-align: left;
+  left: 34%;"> 2. Complexity is not<br>
+  always intuitive 
+</span>
+
+<span 
+  style="
+  margin-left:30%; 
+  position: absolute; 
+  top: 66%">
+  <img src="img/others_v_entropy2.png" width="26%" />
+</span>
+
+--
+
+<span 
+  style="
+  margin-left:60%; 
+  position: absolute; 
+  top: 35%">
+  <img src="img/con2.png" width="70%" />
+</span>
+
+<span style="margin: 0;
+  position: absolute;
+  bottom: 65%;
+  text-align: center;
+  left: 70%;"> unified<br>
+  definition
+</span>
+
+--
+
+<span 
+  style="
+  margin-left:68%; 
+  position: absolute; 
+  top: 60%">
+  <img src="img/con1.png" width="100%" />
+</span>
+
+<span style="margin: 0;
+  position: absolute;
+  bottom: 40%;
+  text-align: center;
+  left: 79%;"> SVD Entropy
+</span>
+
+--
 
 .footnote[
 For a more complete breakdown the preprint can be found at [doi.org/fmpt](https://doi.org/fmpt)
 ]
 
-<span 
-  style="
-  margin-left:0%; 
-  position: absolute; 
-  top: 23%">
-  <img src="img/con1.png" width="85%" />
-</span>
-
---
-
-<span 
-  style="
-  margin-left:0%; 
-  position: absolute; 
-  top: 23%">
-  <img src="img/con2.png" width="90%" />
-</span>
-
---
-
-<span 
-  style="
-  margin-left:0%; 
-  position: absolute; 
-  top: 23%">
-  <img src="img/con3.png" width="80%" />
-</span>
-
---
-
-<span 
-  style="
-  margin-left:0%; 
-  position: absolute; 
-  top: 23%">
-  <img src="img/con4.png" width="90%" />
-</span>
-
-
 ???
-1. ecological networks are very complex
 
-Our different measures of complexity don't always tell the same story e.g. resilience and suggests that they are probably underpinning different ecological properties
-
-Thus we need a standardised mechanism -> here we argue in favoure of SVD entropy
