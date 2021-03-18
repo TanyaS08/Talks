@@ -1,0 +1,149 @@
+---
+title: |
+  <h style="font-size:80pt; font-family:'Still';">PROJECT</br>PURPLE RAIN</h>
+subtitle: | 
+author: |
+date: |
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE, collapse = TRUE, comment = ">")
+options(htmltools.dir.version = FALSE)
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#4B384C",
+  secondary_color = "#FF961C"
+)
+```
+
+# Project Malcom
+
+### *Episode I: The menace of complexity*
+
+Featuring the stylings of GVDR
+
+.pull-left[
+**Done**
+
++ SVD Entropy as a measure of network complexity
++ Networks could be more complex
+
+**TODO**
+
++ Complexity and network assembly
++ What constrains complexity - vaguely
+
+]
+
+<span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 40%">
+  <img src="img/wombat.png" width="80%" />
+</span>
+
+---
+
+# Project One Ring
+
+### *Episode II: The attack of the plans*
+
+Featuring *The Fellowship*
+
+.pull-left[
+**Done**
+
++ Predicting networks: a roadmap
+
+**TODO**
+ 
++ Could this link to `Project Pokedex`?
++ I feel there is room for expansion...
+ 
+]
+
+<span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 40%">
+  <img src="img/wombat.png" width="80%" />
+</span>
+
+---
+
+# Project Wombat
+
+### *Episode III: Only a Sith deals in absolute boundaries*
+
+Featuring the scary unknown that is Marie-José Fortin
+
+.pull-left[
++ Applying spatial wombling to ecological networks
++ thinking in terms of ecotrophic regions
++ Linking this up with `Project Pokedex`
+]
+
+<span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 40%">
+  <img src="img/wombat.png" width="80%" />
+</span>
+
+---
+
+# Project Purple Jaguar
+
+### *Episode IV: A new hope for something cool*
+
+There are two 'angles' that get me excited.
+
+.pull-left[
+**Hypergraphs + Networks**
+
++ Lower tier
+
+**Linking up with Phil's work** **i.e.** `Project Padawan`
+
++ Would obviously need to talk to Phil
++ I'm thinking the ecological compliment to his evolutionary focus?
+]
+
+<span 
+  style="
+  margin-left:0%; 
+  position: absolute; 
+  top: 40%">
+  <img src="img/wombat.png" width="80%" />
+</span>
+
+---
+
+# The 'Side Quests'
+
+## Project Pokedex
+
+### *CIEE: A metaweb story*
+
+> Building a metaweb for Canadian invertebrates
+
+## Project Padawan
+
+### *Typed Theory: Who needs maths?*
+
+> Things that involve a lot of words that make ecologists curl up in a ball and cry
