@@ -144,7 +144,7 @@ i.e. things that are either Appendix-able or could contribute to other chapters
 
 + Building a metaweb for Canadian vertebrates
 
-+ This could arguably feed into both Project One Ring and Project Wombat...
++ This could arguably/probably feed into both Project One Ring and Project Wombat...
 
 ## Project Padawan
 
@@ -170,3 +170,7 @@ i.e. things that are either Appendix-able or could contribute to other chapters
 
 ### Marrying Projects Wombat and Pokedex
 
+*i.e.* 'leveraging' the CIEE/Canadian Metaweb working group as an opportunity to grow the potential (expand the horizons/take it to new levels we could not previously concieve) of the original idea.
+
++ Does phase I (constructing metaweb) marry with points discussed in `Project One Ring`?
++ How can we feed work form `Project Pokedex` into `Project Wombat`?
