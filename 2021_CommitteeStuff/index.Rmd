@@ -34,6 +34,8 @@ style_duo_accent(
 
 Featuring the stylings of GVDR
 
+Redefining how we define complexity and maybe some additional exploring
+
 .pull-left[
 **Done**
 
@@ -44,16 +46,10 @@ Featuring the stylings of GVDR
 
 + Complexity and network assembly
 + What constrains complexity - vaguely
++ building on (and with?) GVDR's contributions to the OG ms
 
 ]
 
-<span 
-  style="
-  margin-left:0%; 
-  position: absolute; 
-  top: 40%">
-  <img src="img/wombat.png" width="80%" />
-</span>
 
 ---
 
@@ -63,7 +59,8 @@ Featuring the stylings of GVDR
 
 Featuring *The Fellowship*
 
-.pull-left[
+A horizon scan of the toolsets and the future of predicting ecological networks - with a focus on ML
+
 **Done**
 
 + Predicting networks: a roadmap
@@ -72,15 +69,15 @@ Featuring *The Fellowship*
  
 + Could this link to `Project Pokedex`?
 + I feel there is room for expansion...
++ A part of me loves the idea of having something similar to Eva's `Analysing ecological networks of species interactions` ms but I don't know if this is necessarily feasible/exactly what that would look like...
  
-]
 
 <span 
   style="
-  margin-left:0%; 
+  margin-left:70%; 
   position: absolute; 
-  top: 40%">
-  <img src="img/wombat.png" width="80%" />
+  top: 5%">
+  <img src="img/ProjectRing.jpg" width="80%" />
 </span>
 
 ---
@@ -91,18 +88,21 @@ Featuring *The Fellowship*
 
 Featuring the scary unknown that is Marie-José Fortin
 
+Rethinking what we use to draw lines across the landscape - something more indicative of the community than just composition
+
 .pull-left[
 + Applying spatial wombling to ecological networks
 + thinking in terms of ecotrophic regions
 + Linking this up with `Project Pokedex`
++ With a `SpatialBoundaries.jl` as at least some sort of end product... 
 ]
 
 <span 
   style="
   margin-left:0%; 
   position: absolute; 
-  top: 40%">
-  <img src="img/wombat.png" width="80%" />
+  top: 43%">
+  <img src="img/wombat.png" width="75%" />
 </span>
 
 ---
@@ -129,21 +129,44 @@ There are two 'angles' that get me excited.
   margin-left:0%; 
   position: absolute; 
   top: 40%">
-  <img src="img/wombat.png" width="80%" />
+  <img src="img/ProjectJaguar.png" width="80%" />
 </span>
 
 ---
 
 # The 'Side Quests'
 
+i.e. things that are either Appendix-able or could contribute to other chapters
+
 ## Project Pokedex
 
 ### *CIEE: A metaweb story*
 
-> Building a metaweb for Canadian invertebrates
++ Building a metaweb for Canadian vertebrates
+
++ This could arguably feed into both Project One Ring and Project Wombat...
 
 ## Project Padawan
 
 ### *Typed Theory: Who needs maths?*
 
-> Things that involve a lot of words that make ecologists curl up in a ball and cry
++ Things that involve a lot of words that make ecologists curl up in a ball and cry
+
+## Project(s) Plunderling
+
++ Side Quest::Unrelated
+
+<span 
+  style="
+  margin-left:60%; 
+  position: absolute; 
+  top: 74%">
+  <img src="img/Plunderlings.png" width="85%" />
+</span>
+
+---
+
+# Project Pokedex
+
+### Marrying Projects Wombat and Pokedex
+
