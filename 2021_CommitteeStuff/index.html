@@ -22,49 +22,82 @@ class: center, middle, inverse, title-slide
 
 
 
+# Overview
+
+&lt;span 
+  style="
+  margin-left: 15%; 
+  position: centre; 
+  top: 15%"&gt;
+  &lt;img src="img/tree_diagram.png" width="70%" /&gt;
+&lt;/span&gt;
+
+---
+
+# Project Purple Rain
+
+## The Overview
+
+*i.e what is the common thread?*
+
++ We know that networks contain information and we know that they are predictable
++ We also know that they are important for ecosystem functioning but they aren't considered a 'priority'
+
+*Tackling this*
+
++ We cannot feasibly, empirically measure all network so we need a toolset to predict them -&gt; `Project One Ring`
++ Let's see how well this works while also providing a 'management tool' -&gt; `Project Pokedex`
++ Okay cool but what about the networks in *my* landscape -&gt; `Project Wombat`
++ But also how are networks percieved? What is complexity anyway -&gt; `Project Malcom` (this link is iffy at best...)
+
+---
+
 # Project Malcom
 
-### *Episode I: The menace of complexity*
+## Background
 
-Featuring the stylings of GVDR
++ What can we learn form the information that networks contain?
++ Their complexity?
++ What about how assembly constrains complexity?
 
-Redefining how we define complexity and maybe some additional exploring
+## SVD entropy reveals the high complexity of ecological networks
 
-.pull-left[
-**Done**
+*Featuring GVDR*
 
-+ SVD Entropy as a measure of network complexity
-+ Networks could be more complex
++ Turns out ecologists have had it all wrong when it comes to network complexity...
++ Using SVD entropy as a measure of network complexity
++ Turns out they are very complex - *i.e.* Rule #1 has been displaced
++ Also some other cools things regarding connectence and complexity
++ **"Done"**
 
-**TODO**
+---
 
-+ Complexity and network assembly
-+ What constrains complexity - vaguely
-+ building on (and with?) GVDR's contributions to the OG ms
+# Project Malcom
 
-]
+## The Manna program
 
++ Some stuff/thoughts from the Albuquerque airport... Its also in *C*
++ Another potential aspect to look into is the Island Biogeography Assembly models form Tad Dallas and Pedro Jordano
++ Looking at change in entropy as a function as well as simulating the correct values for connectence as opposed to the 'full spectrum' - Building on Andrew's work.
++ **Deliverable:** ??A network assembly model??
 
 ---
 
 # Project One Ring
 
-### *Episode II: The attack of the plans*
+## Background
 
-Featuring *The Fellowship*
++ We know networks as well as their properties are predictable.
++ But do we have the toolset?
++ What does the future look like?
 
-A horizon scan of the toolsets and the future of predicting ecological networks - with a focus on ML
+## A Primer on Predicting Species Interaction Networks (Across Space and Time)
 
-**Done**
+*Featuring The Fellowship* 
 
-+ Predicting networks: a roadmap
++ How do we combine space and time into out predictions: a horizon scan.
 
-**TODO**
- 
-+ Could this link to `Project Pokedex`?
-+ I feel there is room for expansion...
-+ A part of me loves the idea of having something similar to Eva's `Analysing ecological networks of species interactions` ms but I don't know if this is necessarily feasible/exactly what that would look like...
- 
++ **Pending reviewer feedback**
 
 &lt;span 
   style="
@@ -76,98 +109,180 @@ A horizon scan of the toolsets and the future of predicting ecological networks 
 
 ---
 
-# Project Wombat
+# Project One Ring
 
-### *Episode III: Only a Sith deals in absolute boundaries*
+## Integration with Project Pokedex
 
-Featuring the scary unknown that is Marie-José Fortin
++ *Featuring some members of The Fellowship and the The Rohirrim*
 
-Rethinking what we use to draw lines across the landscape - something more indicative of the community than just composition
 
-.pull-left[
-+ Applying spatial wombling to ecological networks
-+ thinking in terms of ecotrophic regions
-+ Linking this up with `Project Pokedex`
-+ With a `SpatialBoundaries.jl` as at least some sort of end product... 
-]
++ A mini case study/additional proof of concept??
++ Taking what we discussed in *A Primer on Predicting Species Interaction Networks (Across Space and Time)* and using that within `Project Pokedex` 
++ **Deliverable:** A Canadian metaweb (super simple)
 
 &lt;span 
   style="
-  margin-left:0%; 
+  margin-left:70%; 
   position: absolute; 
-  top: 43%"&gt;
+  top: 5%"&gt;
+  &lt;img src="img/ProjectRing.jpg" width="80%" /&gt;
+&lt;/span&gt;
+
+
+---
+
+# Project Wombat
+
+## Background
+
++ How do networks vary across space? But also more simply where do they stop? How does this relate to the landscape?
++ A more practical output/take - WRT being able to map out 'discrete' ecotrophic zones
++ That being said there is also a theoretical component - especially if we build on the idea of how graphlets over space
+
+## SpatialBoundaries.jl
+
++ Developing the needed toolset to actually do the wombling...
++ Focus would be on triangulation and lattice wombling
++ Maybe categorical?
+
+
++ **Deliverable:** *JOSS*-type ms
+
+&lt;span 
+  style="
+  margin-left:70%; 
+  position: absolute; 
+  top: 5%"&gt;
   &lt;img src="img/wombat.png" width="75%" /&gt;
 &lt;/span&gt;
 
 ---
 
-# Project Purple Jaguar
+# Project Wombat
 
-### *Episode IV: A new hope for something cool*
+## The end of the ecological network
 
-There are two 'angles' that get me excited.
++ Where does one network end and the next start?
++ How does this link to landscape boundaries/changes
++ Do we see the same when overlaying with e.g. community composition
++ One idea that we *need* to look at is the idea of although we might have species turnover in the landscape but maybe we retain the network structure
 
-.pull-left[
-**Hypergraphs + Networks**
 
-+ Lower tier
++ **Deliverable:** Spp vs. networks vs. community boundaries across the same landscape. A biogeography perspective
 
-**Linking up with Phil's work** **i.e.** `Project Padawan`
-
-+ Would obviously need to talk to Phil
-+ I'm thinking the ecological compliment to his evolutionary focus?
-]
 
 &lt;span 
   style="
-  margin-left:0%; 
+  margin-left:70%; 
   position: absolute; 
-  top: 40%"&gt;
-  &lt;img src="img/ProjectJaguar.png" width="80%" /&gt;
+  top: 5%"&gt;
+  &lt;img src="img/wombat.png" width="75%"&gt;
 &lt;/span&gt;
 
 ---
 
-# The 'Side Quests'
+# Project Wombat
 
-i.e. things that are either Appendix-able or could contribute to other chapters
+## Surfing the graphlets
 
-## Project Pokedex
+*Featuring M-J*
 
-### *CIEE: A metaweb story*
++ Idea is to use the metaweb from `Project Pokedex`
+  + But also need to do some simulating...
++ How do *within* network dynamics change in space (and time)? *i.e.* the idea of a moving window
+  + Different trophic levels/species perceive the landscape differently
+  + Seasonality - migration, diet shifts
++ Moving beyond the 3 node motif/graphlets - (The backbone ms)
++ This would have a validation component as well
 
-+ Building a metaweb for Canadian vertebrates
 
-+ This could arguably/probably feed into both Project One Ring and Project Wombat...
-
-## Project Padawan
-
-### *Typed Theory: Who needs maths?*
-
-+ Things that involve a lot of words that make ecologists curl up in a ball and cry
-
-## Project(s) Plunderling
-
-+ Side Quest::Unrelated
++ **Deliverable:** A methods, perspectives type paper on the validity/use case of this approach.
 
 &lt;span 
   style="
-  margin-left:60%; 
+  margin-left:70%; 
   position: absolute; 
-  top: 74%"&gt;
-  &lt;img src="img/Plunderlings.png" width="85%" /&gt;
+  top: 5%"&gt;
+  &lt;img src="img/wombat.png" width="75%"&gt;
 &lt;/span&gt;
 
 ---
 
 # Project Pokedex
 
-### Marrying Projects Wombat and Pokedex
+## Link predictions; Canadian metaweb
 
-*i.e.* 'leveraging' the CIEE/Canadian Metaweb working group as an opportunity to grow the potential (expand the horizons/take it to new levels we could not previously concieve) of the original idea.
++ The CIEE working group
 
-+ Does phase I (constructing metaweb) marry with points discussed in `Project One Ring`?
-+ How can we feed work form `Project Pokedex` into `Project Wombat`?
++ Ties in with pt. 2 of `Project One Ring` - arguably is the 'leading edge' though...
+
++ &lt;span style="color: #c45371; font-weight:bold"&gt;ICouldNeverTakeThePlaceOfYourMammal&lt;/span&gt; 
+  + *i.e.* The Blueprint pt.1 a quick 'n dirty 'does it work'
+  + Sensu RDPG (GVDR &amp; Stouffer's work)
+  + Predicting networks from species phylogenies
+  
++ Essentially can we say: European Metaweb + AI = Canadian Metaweb
+
++ **Deliverable:** A Canadian metaweb (super simple)
+
+&lt;span 
+  style="
+  margin-left:70%; 
+  position: absolute; 
+  top: 5%"&gt;
+  &lt;img src="img/wombat.png" width="75%"&gt;
+&lt;/span&gt;
+
+---
+
+# Project Pokedex
+
+## &lt;span style="color: #c45371; font-weight:bold"&gt;The B-sides&lt;/span&gt;
+
++ Ultimately a lot of spin-off projects will also come out of the CIEE working group
+
+  + &lt;span style="color: #c45371"&gt;1º Would be Dom's expert elicitation work&lt;/span&gt;
+  + &lt;span style="color: #c45371"&gt;Climate change and food webs in Canada&lt;/span&gt;
+  + &lt;span style="color: #c45371"&gt;AI vs Experts&lt;/span&gt;
+  
+  
++ &lt;span style="color: #c45371; font-weight:bold"&gt;ICouldNeverTakeThePlaceOfYourMammal&lt;/span&gt; 
++ Other future plans?
+
+&lt;span 
+  style="
+  margin-left:70%; 
+  position: absolute; 
+  top: 5%"&gt;
+  &lt;img src="img/wombat.png" width="75%"&gt;
+&lt;/span&gt;
+
+---
+
+# Project Purple Jaguar
+
+**Prospective**
+
+## Setting missiles to hypergraphs
+
++ Networks have layers - much like ogres
++ Can we aggregate these layers?
++ Would probably be something very short?
++ Maybe integrate with/as an appendix to `Project One Ring`?
+
+*Although given out meeting with M-J I think Wombling has a lot more room to grow (Surfing the graphlets) and is also 'achievable'/feesible*
+
+---
+
+# The Time
+
+&lt;span 
+  style="
+  margin-left: 15%; 
+  position: centre; 
+  top: 15%"&gt;
+  &lt;img src="img/Gantt.png" width="80%" /&gt;
+&lt;/span&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

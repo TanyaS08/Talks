@@ -34,8 +34,8 @@
   --text-font-is-google: 1;
   --text-font-family-fallback: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial;
   --text-font-base: sans-serif;
-  --header-font-family: 'Source Code Pro';
-  --code-font-family: 'Source Code Pro';
+  --header-font-family: 'Noto Sans';
+  --code-font-family: 'Noto Sans';
   --code-font-is-google: 1;
   --base-font-size: 20px;
   --text-font-size: 1rem;
@@ -46,17 +46,18 @@
   --header-h3-font-size: 1rem;
 
   /* Colors */
-  --text-color: #F2C438;
-  --header-color: #F2C438;
-  --background-color: #48358C;;
+  --text-color: #a64d2d;
+  --header-color: #f29e38;
+  --header_h2-color: #a64d2d;
+  --background-color: #1a1a1a;;
   --link-color: #96A9EB;
-  --text-bold-color: #50A0FB;
-  --code-color: #50A0FB;
+  --text-bold-color: #514887;
+  --code-color: #f29e38;
   --inverse-text-color: #000000;
   --inverse-background-color: #FF961C;
   --inverse-header-color: #FFFFFF;
   --title-slide-background-color: #050304;
-  --title-slide-text-color: #48358C;
+  --title-slide-text-color: #f29e38;
   --header-background-color: #1381B0;
   --header-background-text-color: #FFFFFF;
   --primary: #1381B0;
