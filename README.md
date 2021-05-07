@@ -28,3 +28,4 @@ Each talk is found in its own file and slides are hosted on `https://tanyas08.gi
 | --------- | ----- | ---- | ---------- |
 | 2020_Dec_QCBS | Exploring the complexity of ecological networks using SVD entropy | https://tanyas08.github.io/Talks/2020_Dec_QCBS/ | Talk for 11th QCBS Symposium |
 | 2020_Dec_TUKS | A Primer on FAIR & Open Science and a brief interlude with GitHub |  https://tanyas08.github.io/Talks/2020_Dec_TUKS/ | 'Internal' talk with the plant ecology lab at TUKS  |
+| 2021_GitHubPrimer_PFTC | A GitHub Primer: but mostly housekeeping rules |  https://tanyas08.github.io/Talks/2021_GitHubPrimer_PFTC/ | An attempt at laying down the law for workflows |
