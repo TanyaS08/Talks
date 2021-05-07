@@ -196,7 +196,7 @@ pull request that 1) makes sure there are no conflicts and 2) allows for **revie
 ---
 # Informative commit messages
 
-.center[I like to say the information is in the emojj.. but maybe not always. *i.e. I just want to have fun with commit messages here...* ]
+.center[I like to say the information is in the emojj... but maybe not always. *i.e. I just want to have fun with commit messages here...* ]
 
 <span style="margin: 0;
   position: absolute;
@@ -221,6 +221,33 @@ pull request that 1) makes sure there are no conflicts and 2) allows for **revie
   top: 70%;
   left: 60%;">
   <img src="img/Commit4.png" width="90%" /></span>
+
+---
+# Can also document things in the PR
+
+<span style="margin: 0;
+  position: absolute;
+  top: 18%;
+  left: 40%;">
+  <img src="img/Convo.png" width="70%" /></span>
+
+---
+# Starting a new Sub-task
+
+1. Create a branch named after the sub-task
+    + If using the {usethis} workflow: `usethis::pr_init(branch = "BRANCH_NAME")`
+    
+2. Make a Pull Request
+  + `usethis::pr_push()`
+  
+3. Mark as a draft (in web browser)
+  + Not critical
+  
+4. Assign relevant people (in web browser)
+
+5. Do stuff...
+
+6. Request review when/as needed
 
 ---
 # General things to remember
