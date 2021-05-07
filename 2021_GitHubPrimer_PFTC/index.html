@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>A GitHub Primer</title>
+    <meta charset="utf-8" />
+    <meta name="date" content="2021-05-07" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/robot.css" rel="stylesheet" />
+    <link href="libs/remark-css/robot-fonts.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# A GitHub Primer
+## <p>but mostly houskeeping rules</p>
+### <p><strong>Tanya Strydom</strong>🐾<br> PhD Student<br> <a href="https://poisotlab.io">Poisot Lab</a></p>
+### <p>07 May 2021</p>
+
+---
+
+
+
+
+# TanyaS08/PFTC5_Gr3
+
+.center[
+The place where all code based things should happen
+]
+
+&lt;span style="margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 1%;"&gt;
+  &lt;img src="img/PFTC_Gr3.png" width="99%" /&gt;&lt;/span&gt;
+
+---
+
+# Get with GitHub
+
+.center[
+Think of GitHub your normal documents folder(s) - the only difference is that it has some bonus features.
+]
+
+* It has **Version Control:** This means that every time you re-upload a file the older versions are saved.
+  + You can do the 'uploading' &amp; 'downloading' [straight from RStudio](https://happygitwithr.com/rstudio-git-github.html)
+  + Everyone has the most up to date version on their device - *no more email chain!*
+  
+
+* It makes for easy **archiving** and **sharing**. Projects are hosted in repositories in the public domain.
+  + Drop the link and everyone has read access
+  + It's designed with documentation and hosting in mind
+
+* And for our use case today - we can do work in 'modular units' *i.e.* work in isolation but still in collaboration *(I'm judging myself for this phrase don't worry)*
+
+
+---
+
+# Housekeeping rules
+
+.center[To make this house a home (and everyones lives simpler) there are some guidelines in place - also in the [README](https://github.com/TanyaS08/PFTC5_Gr3#readme)]
+
++ One sub task = one branch
++ PR's should be reviewed before merging branches with `master`
++ Keep commits informative - but emoji use is always encouraged
++ Name scripts after tasks
+
+
+&lt;span style="margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 10%;"&gt;
+  &lt;img src="img/annotate.png" width="50%" /&gt;&lt;/span&gt;
+  
+&lt;span style="margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 55%;"&gt;
+  &lt;img src="img/document.png" width="90%" /&gt;&lt;/span&gt;
+
+---
+
+# Why have Rules?
+
+.center[
+Simply put having this seemingly convoluted system of working in different branches/sub units means things are isolated and that there are different checks and balances in place before we weave everything together
+
+It also means that there is some transparency to the work we are doing and others in the team can 'check in' on progress and be quickly brought up to speed if needed
+
+Things can easily be found!
+]
+
+--
+
+**Housekeeping Rules**
+
++ One sub task = one branch + Reviews **= Modularity and check points**
+
++ Keep commits informative + discussions **= 'Historic records'**
+
++ Name scripts after tasks **= Locate-ability**
+
+
+---
+
+# Working on Branches
+
+.center[ *To Fork or to Clone?:*
+Although forking is great if you are developing your own thing this is a bit more of a collaborative project and keeping tabs across (and finding) different forks is time consuming. So we can clone the Repo and work on branches
+]
+
+.pull-left[
+
+* Branches make a copy of the 'main' repo - called `master`
+
+* Any changes you make will only be on your branch and not affect `master` or any other branches
+
+* This means we can 'contain' work; check it and then have it rejoin `master`
+
+
+
+]
+
+---
+
+# Branches: A Case study on modularity
+
+.center[ 
+We recently wrote an entire manuscript using a GitHub workflow - each section was its own branch which was only added to the 'main' manuscript after being reviewed by others
+]
+
+--
+
+Each task was on its own branch
+
+&lt;span style="margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;"&gt;
+  &lt;img src="img/Branch_initial.png" width="90%" /&gt;&lt;/span&gt;
+
+
+--
+
+.pull-left[ Once they were reviewed they start 'collapsing' back into `master`]
+
+&lt;span style="margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 10%;"&gt;
+  &lt;img src="img/Branch_merge.png" width="60%" /&gt;&lt;/span&gt;
+
+
+---
+
+# Branches can be Pull Requests (PRs)
+
+.center[When we want to merge our branch back to `master` we can create a 
+pull request that 1) makes sure there are no conflicts and 2) allows for **review**]
+
+.pull-left[
+
+* If each task is on a branch then can turn it into a PR
+
+* PRs have other feature's like assigning people to it, code review and discussions
+
+* This acts as a check point and means we can look at work done on one task without having to weed through other task changes
+
+]
+
+&lt;span style="margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;"&gt;
+  &lt;img src="img/PR.png" width="69%" /&gt;&lt;/span&gt;
+  
+&lt;span style="margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 60%;"&gt;
+  &lt;img src="img/Assign.png" width="60%" /&gt;&lt;/span&gt;
+  
+  
+&lt;span style="margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;"&gt;
+  &lt;img src="img/Comment.png" width="60%" /&gt;&lt;/span&gt;
+
+---
+# Informative commit messages
+
+.center[I like to say the information is in the emojj.. but maybe not always. *i.e. I just want to have fun with commit messages here...* ]
+
+&lt;span style="margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 10%;"&gt;
+  &lt;img src="img/Commit1.png" width="60%" /&gt;&lt;/span&gt;
+  
+&lt;span style="margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 40%;"&gt;
+  &lt;img src="img/Commit2.png" width="80%" /&gt;&lt;/span&gt;
+  
+&lt;span style="margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 10%;"&gt;
+  &lt;img src="img/Commit3.png" width="70%" /&gt;&lt;/span&gt;
+  
+&lt;span style="margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 60%;"&gt;
+  &lt;img src="img/Commit4.png" width="90%" /&gt;&lt;/span&gt;
+
+---
+# General things to remember
+
++ Pull (almost always), commit and push (often)
+
++ You are going to mess up and that's okay - feel free to bother me (or whoever you feel comfortable talking to)
+
+  + This is a learning experience after all
+  
++ If all else fails version history will probably save your life...
+
+&lt;span style="margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 10%;"&gt;
+  &lt;img src="img/sleepy.png" width="100%" /&gt;&lt;/span&gt;
+  
+&lt;span style="margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 60%;"&gt;
+  &lt;img src="img/octobiwan.png" width="70%" /&gt;&lt;/span&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
