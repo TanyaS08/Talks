@@ -4,8 +4,7 @@ subtitle: |
   but mostly houskeeping rules
 author: |
   **Tanya Strydom**🐾<br>
-  PhD Student<br>
-  [Poisot Lab](https://poisotlab.io)
+  *disclaimer very simple slides ahead*
 date: |
   07 May 2021
 output:
